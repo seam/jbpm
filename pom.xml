@@ -1,0 +1,95 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+
+   <parent>
+      <groupId>org.jboss.seam</groupId>
+      <artifactId>seam-parent</artifactId>
+      <version>1</version>
+   </parent>
+
+   <groupId>org.jboss.seam.jbpm</groupId>
+   <artifactId>seam-jbpm-parent</artifactId>
+   <packaging>pom</packaging>
+   <version>3.0.0-SNAPSHOT</version>
+   <name>Seam jBPM Parent</name>
+
+   <prerequisites>
+      <maven>3.0</maven>
+   </prerequisites>
+
+   <modules>
+      <module>api</module>
+      <module>impl</module>
+      <module>docs</module>
+      <!-- <module>examples</module> -->
+   </modules>
+
+   <developers>
+      <developer>
+         <name>Tihomir Surdilovic</name>
+         <email>tsurdilo@redhat.com</email>
+         <url>http://in.relation.to/Bloggers/Tihomir</url>
+         <organization>JBoss, by Red Hat</organization>
+         <organizationUrl>http://jboss.org</organizationUrl>
+         <timezone>EST</timezone>
+         <roles>
+            <role>Module Lead</role>
+         </roles>
+      </developer>
+   </developers>
+
+   <properties>
+      <arquillian.version>1.0.0-SNAPSHOT</arquillian.version>
+      <seam.version>3.0.0.b01</seam.version>
+   </properties>
+
+   <dependencyManagement>
+      <dependencies>
+
+         <dependency>
+            <groupId>org.jboss.seam</groupId>
+            <artifactId>seam</artifactId>
+            <version>${seam.version}</version>
+            <scope>import</scope>
+            <type>pom</type>
+         </dependency>
+
+         <!-- Override dependencyManagement from org.jboss.seam:seam -->
+         <dependency>
+            <groupId>org.jboss.seam.jbpm</groupId>
+            <artifactId>seam-jbpm-api</artifactId>
+            <version>${project.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.jbpm</groupId>
+            <artifactId>seam-jbpm-impl</artifactId>
+            <version>${project.version}</version>
+         </dependency>
+
+      </dependencies>
+   </dependencyManagement>
+
+   <profiles>
+      <profile>
+         <id>distribution</id>
+         <activation>
+            <property>
+               <name>release</name>
+            </property>
+         </activation>
+         <modules>
+            <module>dist</module>
+            <module>docs</module>
+         </modules>
+      </profile>
+   </profiles>
+
+   <scm>
+      <connection>scm:svn:http://anonsvn.jboss.org/repos/seam/modules/jbpm/trunk</connection>
+      <developerConnection>scm:svn:https://svn.jboss.org/repos/seam/modules/jbpm/trunk</developerConnection>
+      <url>http://fisheye.jboss.org/browse/Seam/modules/jbpm/trunk</url>
+   </scm>
+
+</project>
