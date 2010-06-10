@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+
+<chapter id="drools-general">
+  <title>Seam jBPM</title>
+  
+  <para>Seam provides a convenient method of remotely accessing CDI beans from a web page, using AJAX (Asynchronous
+    Javascript and XML). The framework for this functionality is provided with almost no up-front development effort -
+    your beans only require simple annotating to become accessible via AJAX. This chapter describes the steps
+    required to build an AJAX-enabled web page, then goes on to explain the features of the Seam Remoting framework in
+    more detail. </para>
+
+ 
