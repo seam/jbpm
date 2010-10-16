@@ -51,9 +51,9 @@
    </build>
 
    <scm>
-      <connection>scm:svn:http://anonsvn.jboss.org/repos/seam/modules/jbpm/trunk/docs</connection>
-      <developerConnection>scm:svn:https://svn.jboss.org/repos/seam/modules/jbpm/trunk/docs</developerConnection>
-      <url>http://fisheye.jboss.org/browse/seam/modules/jbpm/docs</url>
+      <connection>scm:git:git://github.com/seam/jbpm.git</connection>
+      <developerConnection>scm:git:git@github.com:seam/jbpm.git</developerConnection>
+      <url>http://github.com/seam/jbpm</url>
    </scm>
    
 </project>

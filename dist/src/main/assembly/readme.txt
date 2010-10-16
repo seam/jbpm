@@ -33,7 +33,7 @@ The Seam 3 jBPM Module provided integration with jBPM.
  Seam 3 Home Page:     http://www.sfwk.org/Seam3
  Downloads:            http://www.sfwk.org/Seam3/DistributionDownloads
  Forums:               http://www.sfwk.org/Community/Seam3Users
- Source Code:          http://anonsvn.jboss.org/repos/seam/modules/drools
+ Source Code:          git://github.com/seam/drools.git
  Issue Tracking:       http://jira.jboss.org/jira/browse/SEAMJBPM
 
  Release Notes

@@ -87,9 +87,9 @@
    </profiles>
 
    <scm>
-      <connection>scm:svn:http://anonsvn.jboss.org/repos/seam/modules/jbpm/trunk</connection>
-      <developerConnection>scm:svn:https://svn.jboss.org/repos/seam/modules/jbpm/trunk</developerConnection>
-      <url>http://fisheye.jboss.org/browse/Seam/modules/jbpm/trunk</url>
+      <connection>scm:git:git://github.com/seam/jbpm.git</connection>
+      <developerConnection>scm:git:git@github.com:seam/jbpm.git</developerConnection>
+      <url>http://github.com/seam/jbpm</url>
    </scm>
 
 </project>
